@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -17,8 +19,9 @@ main{
 
 .header h2 {
     font-weight: 600;
-    color: #02102b;
+    color: #fff;
     font-size: 30px;
+    text-align: center;
 }
 
 .container{
@@ -45,13 +48,14 @@ main{
 .form-control{
     display: flex;
     flex-direction: column;
+    position: relative;
     
 }
 
 .form-control label{
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #02102b;
+    color: #fff
 }
 
 .form-control input{
@@ -66,17 +70,34 @@ main{
 
 .form-control i {
     position: absolute;
-    top: 145px;
-    right: 500px;
-    visibility: visible;
+    top: 45px;
+    right: 25px;
+    visibility: hidden
 }
 
 .form-control small {
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     top: 180px;
     margin-top: 5px;
     font-size: 14px;
+}
+
+.form-control.success input{
+    border: 2px solid #4ECA64;
+}
+
+.form-control.success i .icon-success{
+    visibility: visible;
+}
+
+.form-control.error input{
+    border: 2px solid #DB5A5A;
+}
+
+
+.form-control.error i .icon-error{
+    visibility: visible;
 }
 
 button {
